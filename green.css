@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+  color: #fff;
+  font-family: sans-serif;
+  font-family: "Source Code Pro", monospace;
+}
+
+header {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.pre-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(6, 116, 11, 0.356);
+  z-index: 999;
+  opacity: 0;
+  animation: animation 25s 1;
+}
+
+.loader-gif {
+  width: 100px;
+  height: 100px;
+  background: url(./green-project/fallingsnow-unscreen.gif);
+  background-position: center;
+  background-size: cover;
+  filter: saturate(500%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+}
+
+@keyframes animation {
+  0% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.header-slide {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  animation: slide 25s infinite linear;
+  position: relative;
+}
+
+.header-slide img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0%);
+  }
+  20% {
+    transform: translate(0%);
+  }
+  23% {
+    transform: translate(-100%);
+  }
+  35% {
+    transform: translate(-100%);
+  }
+  38% {
+    transform: translate(-200%);
+  }
+  60% {
+    transform: translate(-200%);
+  }
+  63% {
+    transform: translate(-300%);
+  }
+  80% {
+    transform: translate(-300%);
+  }
+  83% {
+    transform: translate(-400%);
+  }
+  100% {
+    transform: translate(-400%);
+  }
+}
+
+.header-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.inner-content h1 {
+  text-transform: uppercase;
+  font-size: 200%;
+  text-shadow: -3px 1px 5px #333;
+}
+
+.inner-content p {
+  font-size: 90%;
+  text-shadow: -3px 1px 5px #333;
+  margin: 0 100px;
+}
+
+.hcontent1 {
+  position: absolute;
+  top: 60%;
+  text-align: center;
+  animation: forwater 25s infinite;
+}
+
+.hcontent1 span {
+  color: darkblue;
+}
+
+.hcontent2 {
+  position: absolute;
+  top: 78%;
+  text-align: center;
+  animation: forplants 25s infinite;
+}
+
+.hcontent2 span {
+  color: darkgreen;
+}
+
+.hcontent3 {
+  position: absolute;
+  top: 17%;
+  text-align: center;
+  animation: foranimals 25s infinite;
+}
+
+.hcontent3 span {
+  color: orange;
+}
+
+.hcontent4 {
+  position: absolute;
+  top: 75%;
+  text-align: center;
+  animation: forair 25s infinite;
+}
+
+.hcontent4 span {
+  color: gray;
+}
+
+.hcontent5 {
+  position: absolute;
+  top: 10%;
+  text-align: center;
+  animation: forwar 25s infinite;
+}
+
+.hcontent5 span {
+  color: rgb(185, 61, 61);
+}
+
+@keyframes forwater {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  18% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes forplants {
+  0% {
+    opacity: 0;
+  }
+  23% {
+    opacity: 0;
+  }
+  28% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes foranimals {
+  0% {
+    opacity: 0;
+  }
+  38% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 1;
+  }
+  58% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes forair {
+  0% {
+    opacity: 0;
+  }
+  63% {
+    opacity: 0;
+  }
+  68% {
+    opacity: 1;
+  }
+  78% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes forwar {
+  0% {
+    opacity: 0;
+  }
+  83% {
+    opacity: 0;
+  }
+  88% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
